@@ -118,6 +118,7 @@ open class UISideMenuNavigationController: UINavigationController {
         return super.shouldPerformSegue(withIdentifier: identifier, sender: sender)
     }
     
+    /* Disable superclass override on Mark's fork
     override open func pushViewController(_ viewController: UIViewController, animated: Bool) {
         guard viewControllers.count > 0 else {
             // NOTE: pushViewController is called by init(rootViewController: UIViewController)
@@ -168,6 +169,7 @@ open class UISideMenuNavigationController: UINavigationController {
         presentingViewController.pushViewController(viewController, animated: animated)
         CATransaction.commit()
     }
+    */
 }
 
 
